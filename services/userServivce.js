@@ -1,4 +1,4 @@
-class UserServife {
+class UserService {
   constructor() {
     this.userRepository = new UserRepository();
   }
