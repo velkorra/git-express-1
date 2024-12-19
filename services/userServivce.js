@@ -10,4 +10,8 @@ class UserService {
   async createUser(user) {
     return this.userRepository.createUser(user);
   }
+
+    async updateUser(user) {
+        return this.userRepository.updateUser(user);
+    }
 }
