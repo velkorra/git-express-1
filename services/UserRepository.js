@@ -10,4 +10,8 @@ export class UserRepository{
     async createUser(user) {
         this.users.push(user);
     }
+
+    async updateUser(user){
+        this.users = this.users.map(u => u.id === user.id ? user : u);
+    }
 }
